@@ -1,4 +1,5 @@
 import java.io.IOException; 
+import java.util.function.Supplier; 
 import java.util.logging.*; 
   
 public class GFG { 
@@ -15,7 +16,11 @@ public class GFG {
         // Set Logger level() 
         logger.setLevel(Level.WARNING); 
   
-        // Call warning method 
-        logger.warning("Set WARNING = ERRORS"); 
+        // Create a supplier<String> method 
+        Supplier<String> StrSupplier 
+            = () -> new String("WARNING WARNING WARNING"); 
+  
+        // Call warning(Supplier<String>) 
+        logger.warning(StrSupplier); 
     } 
 } 
