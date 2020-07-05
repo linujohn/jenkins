@@ -6,7 +6,10 @@ public class RawType{
 		
 		
 		List words= new ArrayList(); 
+		
+		@SuppressWarnings({"rawtypes","unchecked"})
 		words.add("hello");
+		words.add("helloworld");
 
 		
 	}
