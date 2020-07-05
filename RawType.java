@@ -1,6 +1,6 @@
 import java.util.*;
 public class RawType{ 
-@SuppressWarnings({"rawtypes","unchecked"})	
+@SuppressWarnings("unchecked")	
 	public static void main(String args[])
 	{
 		
